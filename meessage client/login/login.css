@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: url('loginBakground.jpg');
+    background-size: cover;
+}
+
+h2{
+    justify-content: center;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+form{
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input{
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    height: 35px;
+    display: block;
+    padding:5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 350px;
+    background: transparent;
+    color: rgb(245, 224, 103);
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: brown;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgba(14, 14, 212, 0.842);
+    color: white;
+    margin: 14px;
+    border: none;
+    width: 350px;
+    padding: 8px;
+    /* margin-bottom: 20%; */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+}
+
+p{
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#signup{
+    font-size: 14px;
+    width: 70px;
+}

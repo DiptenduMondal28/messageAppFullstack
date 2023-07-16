@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('wallpaper.js.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-title {
+    text-align: center;
+    flex-grow: 1;
+    color:rgb(17, 4, 201);
+  }
+
+  .header-button {
+    margin-left: 10px; /* Adjust the spacing as needed */
+  }
+  
+/* h1{
+    justify-content: center;
+    text-align: center;
+    color: rgb(5, 5, 73);
+} */
+
+  main {
+    margin-top: 60px; /* Adjust this value based on the header's height */
+    margin-bottom: 60px; /* Adjust this value based on the footer's height */
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-form {
+    text-align: center;
+    flex-grow: 1;
+    color:rgb(17, 4, 201);
+  }
+
+  #messageButton {
+    margin-left: 10px; 
+  }
+
+  input{
+    width: 50%;
+    height: 25px;
+    margin-top: 20px;
+    color: black;
+    background: white;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #message-container {
+    overflow-y: auto;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .message.sender {
+    text-align: right;
+    justify-content: center;
+  }
+  
+  .message.sender .message-content {
+    color: #0275d8;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .message.receiver .message-content {
+    color: #333;
+    justify-content: center;
+    text-align: center;
+  }
+
+  button{
+    padding: 10px 20px;
+    background-color: #0275d8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+button:hover{
+    background-color: #025aa5;
+
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  background: transparent;
+}
+.pull-left{
+  flex-basis: 30%;
+  text-align: start;
+  align-items: start;
+}
+.pull-right{
+  flex-basis: 60%;
+  justify-content: left;
+  align-items: left;
+}
+
+#reply{
+  color: #fdef23;
+  background-color: wheat;
+  justify-content: left;
+  text-align: left;
+}
+
+
+
+#groups{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+

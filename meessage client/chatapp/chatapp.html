@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="chatapp.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">CHAT APP</h1>
+        <button id="groupname">Create Group</button>
+    </header>
+    <main>
+        <div class="container" >
+            <div class="pull-left" id="groups"></div>
+            <div class="pull-right" id="message-container"></div>
+        </div>
+    </main>
+    <footer id="footer" >
+        <form class="footer-form" style="display: none;" id="footer-input">
+            <input type="text" id="message">
+            <button type="submit" id="messageButton">send</button>
+            <form enctype="multipart/form-data" id="image">
+                <label for="file"><i style="background-color: #913175; border-color: #CD5888;" class="material-icons btn btn-primary">attachment</i></label>
+                <input type="file" id="file" style="display:none;" name="file">
+                <button id="sendAttachmentButton" style="background-color: #913175; border-color: #CD5888;" class="btn btn-primary btn-sm">send</button>
+            </form>
+        </form>
+        <div id="adduserbuttonContainer"></div>
+    </footer>
+    <script src="chartapp.js"></script>
+</body>
+</html>

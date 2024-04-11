@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>make another admin</title>t</title>
+    <title>make another admin</title>
 </head>
 <body>
-    <label for="userid">user id of that user:</label>
-    <input type="number" name="userid" id="userid">
-    <button id="useridSubmit">submit</button>
+    <div class="mb-3 form-check">
+        <label for="userid">user id of that user:</label>
+        <input type="number" name="userid" id="userid">
+        <button id="useridSubmit" class="btn btn-warning">submit</button>
+    </div>
 </body>
 <script src="admin.js"></script>
 </html>

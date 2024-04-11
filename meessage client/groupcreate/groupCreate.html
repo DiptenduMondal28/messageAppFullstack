@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="groupcreate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Group Create</title>
 </head>
-<body>
-    <form>
-        <label for="name">Group Name:</label>
-        <input type="text" id="groupname">
-        <button type="submit" id="nameSubmit">submit</button>
-    </form>
+<body class="card-body">
+    <div style="display: flex; justify-content: space-around; align-items: center; height: 100vh;">
+        <form class="form-group">
+            <h2>Select a name for your Group</h2>
+            <label for="name"  class="form-label" style="color: aliceblue;">Group Name:</label>
+            <input type="text" id="groupname" class="input-group-text" aria-label="Username" aria-describedby="inputGroup-sizing-bg" placeholder="Name">
+            <button type="submit" id="nameSubmit" class="btn btn-warning btn-bg">Create Name</button>
+        </form>
+    </div>
     <script src="groupCreate.js"></script>
 </body>
 </html>

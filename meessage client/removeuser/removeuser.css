@@ -1,0 +1,19 @@
+
+.card-body{
+    justify-content: center;
+    padding: auto;
+    height: 100vh;
+    background: url('dandelion-445228.jpg');
+    background-size: cover;
+}
+
+#h3{
+    color: rgb(97, 1, 6);
+    text-shadow: 1cap;
+}
+
+#userid{
+    width: 80%;
+    color: rgb(223, 15, 119);
+    border: 0cap;
+}

@@ -1,0 +1,16 @@
+body{
+    background: url(background.jpg);
+    background-size: cover;
+}
+
+#groupname{
+    width: 320px;
+    border-color: rgb(238, 235, 42);
+    background: transparent;
+    color: #eed70a;
+    border-style: bold;
+}
+
+.form-group h2{
+    color: rgb(250, 249, 246);
+}

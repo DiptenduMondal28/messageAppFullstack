@@ -1,0 +1,35 @@
+body{
+    background: url('image.jfif');
+    background-size: cover;
+}
+
+
+body h3{
+    text-align: center;
+    padding-top: 200px;
+    color: rgb(0, 4, 7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#form{
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#userid{
+    justify-content: center;
+    padding-left: 20%;
+}
+
+#form input{
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+    padding-left: 200px;
+    background: transparent;
+}
+
+#useridSubmit:hover{
+    color: antiquewhite;
+    background-color: brown;
+}

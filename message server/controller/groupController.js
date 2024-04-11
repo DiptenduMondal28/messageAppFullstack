@@ -34,7 +34,7 @@ module.exports.userInGroup=async(req,res,next)=>{
                 userId:req.user.id
             }
         })
-        console.log(userAllGroup);
+        //console.log(userAllGroup);
         
         const data=[];
         for(let i=0;i<userAllGroup.length;i++){

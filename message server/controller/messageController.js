@@ -7,8 +7,8 @@ const AWS=require('aws-sdk');
 require('dotenv').config();
 
 module.exports.messageSent=async(req,res,next)=>{
-    console.log('user message sent',req.body);
-    console.log(req.user.id)
+    // console.log('user message sent',req.body);
+    // console.log(req.user.id)
     await Message.create({
         message:req.body.message,
         userId:req.user.id,
@@ -20,9 +20,9 @@ module.exports.messageSent=async(req,res,next)=>{
 
 module.exports.getreply=async(req,res,next)=>{
     try{
-        console.log('group id',req.query.group);
-        console.log(typeof(req.query.Group))
-        console.log('another req  query:',req.query)
+        // console.log('group id',req.query.group);
+        // console.log(typeof(req.query.Group))
+        // console.log('another req  query:',req.query)
         const totalMessage=await Message.count();
         await Message.findAll({
             where:{groupId:Number(req.query.group)},
@@ -48,7 +48,7 @@ module.exports.lastMessage=async(req,res,next)=>{
             order: [['createdAt', 'DESC']],
             include:[User,Group]
         }).then(result=>{
-            console.log(result)
+            //console.log(result)
             res.status(200).json(result);
         }).catch(err=>{
             console.log(err);

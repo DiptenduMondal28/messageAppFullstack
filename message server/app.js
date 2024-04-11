@@ -40,7 +40,7 @@ const userGroup = require('./module/userGroup');
 app.use("/signup",signupRouter);
 app.use(loginRouter);
 app.use('/user',messageRouter);
-app.use("/group",groupRouter)
+app.use("/group",groupRouter);
 
 User.hasMany(Message);
 Message.belongsTo(User,{constraints: true, onDelete: 'CASCADE'});
